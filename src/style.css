@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Bodoni&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    flex-wrap:wrap;
+    font-family: 'Libre Bodoni', serif;
+
+    
+}
+
+html{
+    font-size: 20px;
+    background-color: var(--secondary-color);
+    
+}
+:root{
+    --primary-color:#9296bc;
+    --secondary-color:rgb(249, 245, 245);
+    --primary-color-text:rgb(12, 12, 12);
+    --secondary-color-text:#9296bc;
+    --secondary2-color-text:rgb(210, 210, 210);
+    --secondary3-color-text:rgb(138, 136, 137);
+    
+}
+
+
+.main section {
+    margin: auto;
+    top: 0;
+}
+
+.s-presentacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.s-presentacion img{
+    width: 100%;
+    position: relative;
+    margin: auto;
+    
+}
+.s-presentacion .backgroundTexto{
+    width: 100%;
+    height: 20rem;
+    position: relative;
+    top:-15rem;
+    color: var(--primary-color-text);
+    text-align: center;
+    
+    background: rgb(210,210,210);
+    background: -moz-linear-gradient(180deg, rgba(210,210,210,0) 0%, rgba(210,210,210,1) 22%, rgba(168,167,168,1) 51%, rgba(138,136,137,1) 74%);
+    background: -webkit-linear-gradient(180deg, rgba(210,210,210,0) 0%, rgba(210,210,210,1) 22%, rgba(168,167,168,1) 51%, rgba(138,136,137,1) 74%);
+    background: linear-gradient(180deg, rgba(210,210,210,0) 0%, rgba(210,210,210,1) 22%, rgba(168,167,168,1) 51%, rgba(138,136,137,1) 74%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d2d2d2",endColorstr="#8a8889",GradientType=1);
+}
+.textoImgPresentacion{
+    text-align: center;
+    top: 2rem;
+    position: relative;
+}
+.textoImgPresentacion h1{
+    font-family: 'Great Vibes', cursive;
+    font-size:2.5rem;
+    margin-bottom: 2rem;
+
+    color: var(--primary-color-text);
+}
+.textoImgPresentacion h2{
+    font-size:0.8rem;
+    word-spacing: 0.50em;
+    margin-top: -2rem;
+    color: var(--primary-color-text);
+    
+}
+
+.foto-despedida{
+    width: 80%;
+}
+.s-book{
+    width:100%;
+    margin: auto;
+    background-color: var(--secondary2-color-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:-15rem;
+    padding: 1rem;
+    
+}
+.s-book h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: var(--secondary3-color-text);
+
+}
+.s-gift{
+    width:100%;
+    margin: auto;
+    background-color: var(--secondary3-color-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:-15rem;
+    padding: 1rem;
+    
+}
+.s-gift img{
+    width: 3rem;
+
+}
+.gift-info{
+    width: 80%;
+    text-align: center;
+    margin: 0.5rem;
+    color: #fff;
+}
+.s-dressCode{
+    width:100%;
+    margin: auto;
+    background-color: var(--secondary3-color-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:-15rem;
+    padding: 1rem;
+    
+}
+.s-dressCode h2{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom:-0.5rem;
+    font-family: 'Great Vibes', cursive;
+    color: var(--secondary-color);
+}
+.s-despedida{
+    width:100%;
+    margin: auto;
+    background-color: var(--secondary2-color-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:-15rem;
+    padding: 1rem;
+    
+}
+.s-despedida .despedidaText {
+    top: -1rem;
+}
+.despedidaText > h1,  .despedidaText > h2{
+    color: var(--secondary3-color-text) !important;
+    top: -1rem;
+}
+
+.s-asistencia{
+    width:100%;
+    margin: auto;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:-15rem;
+    padding: 1rem;
+    
+}
+.asistencia-info{
+    width: 80%;
+    text-align: center;
+    margin: 1rem;
+    color: var(--secondary3-color-text);
+}
+.s-asistencia h2 , .s-cancion h2{
+    font-size: 2rem;
+    font-family: 'Great Vibes', cursive;
+    color: var(--secondary3-color-text);
+
+}
+
+.s-fecha{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    font-family: 'Source Code Pro';
+    word-spacing: 0.50em;
+    padding: 0.5rem;
+    height: 8rem;
+    margin-top: 3rem;
+}
+.s-fecha h2{
+    color: var(--secondary3-color-text);
+    font-family: 'Alata', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+.cuenta-regresiva{
+    color: var(--secondary3-color-text);
+    width: 60%;
+    margin: auto;
+    font-family: 'Alata', sans-serif;
+    display: flex;
+    align-items:center;
+    justify-content: space-between ;
+    margin-top: -0.5rem;
+
+}
+.cont-cuenta{
+    text-align: center;
+}
+.cont-cuenta span{
+    font-family: 'Alata', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+.cont-cuenta h4{
+    font-size: 1rem;
+    font-family: 'Great Vibes', cursive;
+}
+
+.s-location{
+    background:var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    padding-bottom: 1rem;
+    margin-top: -15rem !important;
+    
+}
+
+.img-location{
+    width:50%;
+    top: -3rem;
+    margin: auto;
+    position: relative;
+}
+.s-cancion{
+    background:var(--secondary2-color-text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -15rem;
+    padding-bottom: 1rem;
+    
+}
+
+.s-cancion img{
+    width: 3rem;
+
+}
+
+.location-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top:-2rem ;
+    color: var(--secondary3-color-text);
+    
+    
+}
+.location-info h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+}
+.location-info h2{
+    font-size: 1.5rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+    
+}
+.location-info .infoExtra{
+    margin: .5rem;
+    padding:.5rem;
+    line-height: 0.2rem;
+}
+.mapa{
+    width: 100%;
+    height: 15rem;
+}
+
+.carousel-style{
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.buttom-modal{
+    padding:.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color:var(--secondary2-color-text);
+    transition: .3s;
+    text-decoration: none;
+    color: var(--secondary2-color);
+}
+.buttom-modal:hover{
+
+    background-color:var(--secondary3-color-text) ;
+    color: var(--secondary-color);
+}
+ .buttom-modal-oscuro{
+    
+    background-color:var(--secondary3-color-text) !important;
+    
+}
+.buttom-modal-oscuro:hover{
+
+    background-color:var(--secondary-color) !important;
+    color: var(--secondary3-color-text);
+}
+
+.imgLogoDespedida{
+    width:3rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+/* RESPONSIVE MEDIA QUERIES */
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 467px) {
+   html{
+    font-size:15px;
+   }
+  }
+  
+  /* For screens between 768px and 1023px */
+  @media screen and (min-width: 768px) {
+    html{
+        font-size:20px;
+    }
+    .s-presentacion .backgroundTexto{
+        height: 25rem;
+    }
+    .img-location{
+        width:50%;
+        top: -5rem;
+        margin: auto;
+        position: relative;
+    }
+    .carousel-style{
+        width: 40%;
+        margin: 1rem auto;
+    }
+ }
+  /* For screens larger than 1023px */
+  @media screen and (min-width: 1024px) {
+    html{
+        font-size:25px;
+    }
+    .carousel-style{
+        width: 20%;
+        margin: 1rem auto;
+    }
+
+    
+  }
