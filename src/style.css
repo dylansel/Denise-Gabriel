@@ -21,7 +21,7 @@ html{
     --primary-color-text:rgb(12, 12, 12);
     --secondary-color-text:#9296bc;
     --secondary2-color-text:rgb(210, 210, 210);
-    --secondary3-color-text:rgb(138, 136, 137);
+    --secondary3-color-text:#8a8889;
     
 }
 
@@ -46,9 +46,9 @@ html{
 }
 .s-presentacion .backgroundTexto{
     width: 100%;
-    height: 20rem;
+    height: 22rem;
     position: relative;
-    top:-15rem;
+    top:-14rem;
     color: var(--primary-color-text);
     text-align: center;
     
@@ -62,6 +62,7 @@ html{
     text-align: center;
     top: 2rem;
     position: relative;
+    margin-top:1rem;
 }
 .textoImgPresentacion h1{
     font-family: 'Great Vibes', cursive;
@@ -73,7 +74,7 @@ html{
 .textoImgPresentacion h2{
     font-size:0.8rem;
     word-spacing: 0.50em;
-    margin-top: -2rem;
+    margin-top: -1.5rem;
     color: var(--primary-color-text);
     
 }
@@ -161,7 +162,8 @@ html{
 }
 .despedidaText > h1,  .despedidaText > h2{
     color: var(--secondary3-color-text) !important;
-    top: -1rem;
+    top: -0.5rem;
+    
 }
 
 .s-asistencia{
@@ -184,7 +186,7 @@ html{
     color: var(--secondary3-color-text);
 }
 .s-asistencia h2 , .s-cancion h2{
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-family: 'Great Vibes', cursive;
     color: var(--secondary3-color-text);
 
@@ -211,13 +213,12 @@ html{
 }
 .cuenta-regresiva{
     color: var(--secondary3-color-text);
-    width: 60%;
+    width: 100%;
     margin: auto;
     font-family: 'Alata', sans-serif;
     display: flex;
     align-items:center;
     justify-content: space-between ;
-    margin-top: -0.5rem;
 
 }
 .cont-cuenta{
@@ -248,7 +249,7 @@ html{
 }
 
 .img-location{
-    width:50%;
+    width:62%;
     top: -3rem;
     margin: auto;
     position: relative;
@@ -287,7 +288,7 @@ html{
 }
 .location-info h2{
     font-size: 1.5rem;
-    margin-top: -0.5rem;
+    margin-top: -0.2rem;
     margin-bottom: 1.5rem;
     
 }
@@ -337,6 +338,116 @@ html{
     top: 1rem;
     left: 1rem;
 }
+
+
+.hojas-deco{
+    position: absolute;
+    width: 5rem;
+    z-index: 10;
+    bottom:-0.9rem;
+    left: 0;
+}
+.hojas-deco-invertidas{
+    position: absolute;
+    width: 5rem;
+    transform: rotate(180deg);
+    top: -0.9rem;
+    right: 0;
+}
+.izquierda{
+    left: 0;
+    right: auto;
+}
+.derecha{
+    left: auto;
+    right: 0 !important;
+}
+.sectionPadding{
+    padding:  2rem 0.5rem;
+}
+
+
+  /* Estilos del modal */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0; /* Inicialmente, el modal es invisible */
+    pointer-events: none; /* Evita que el contenido del modal sea interactivo */
+    transition: opacity 0.3s ease; /* Agrega transición al cambio de opacidad */
+}
+
+.modal.active {
+    opacity: 1; /* Muestra el modal */
+    pointer-events: auto; /* Permite que el contenido del modal sea interactivo */
+}
+
+.modal-content {
+    text-align: center;
+    padding: 1.875rem; /* 30px */
+    border-radius: 0.3125rem; /* 5px */
+    max-width: 22rem; /* 400px */
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
+    background-color: var(--secondary-color);
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0.625rem; /* 10px */
+    right: 0.625rem; /* 10px */
+    font-size: 1.5rem; /* 24px */
+    cursor: pointer;
+    color: var(--secondary3-color-text);
+}
+
+.modal-close:hover {
+    color: var(--primary-color);
+}
+
+.modal-content h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem; /* 24px */
+    color: var(--primary-color-text);
+    margin-bottom: 1.25rem; /* 20px */
+}
+
+.modal-content .datos-bancarios {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; /* 16px */
+    color: var(--primary-color-text);
+    margin-bottom: 1rem; /* 16px */
+}
+
+.modal-content .label {
+    color: var(--primary-color);
+    display: block;
+    font-size: 0.875rem; /* 14px */
+     
+}
+
+.modal-content .content {
+    font-size: 1.125rem; /* 18px */
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* RESPONSIVE MEDIA QUERIES */
 
 /* For screens smaller than 768px */
@@ -374,6 +485,5 @@ html{
         width: 20%;
         margin: 1rem auto;
     }
-
     
   }

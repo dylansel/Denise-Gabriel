@@ -64,3 +64,33 @@ function updateCountdown() {
 updateCountdown();
 // Refresh every second
 setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
+
+
+
+
+
+function openModal() {
+    var modal = document.getElementById('myModal');
+    modal.style.display = "flex";
+    setTimeout(function() {
+        modal.classList.add('active');
+        document.addEventListener('click', outsideClick); // Agregar evento de clic en todo el documento
+    }, 10);
+}
+
+function closeModal() {
+    var modal = document.getElementById('myModal');
+    modal.classList.remove('active');
+    setTimeout(function() {
+        modal.style.display = "none";
+        document.removeEventListener('click', outsideClick); // Remover evento de clic del documento al cerrar el modal
+    }, 300);
+}
+
+// Función para verificar si se hizo clic fuera del contenido del modal
+function outsideClick(event) {
+    var modal = document.getElementById('myModal');
+    if (!event.target.closest('.modal-content')) {
+        closeModal();
+    }
+}

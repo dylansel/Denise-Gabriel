@@ -13,7 +13,23 @@
 <body>
    
     <main class="main">
-      
+      <div class="modal" id="myModal">
+        <!-- Modal Content -->
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <h3>Datos Bancarios</h3>
+            <div class="datos-bancarios">
+                <span class="label">Nombre completo</span>
+                <span class="content">Denise y Gabriel</span>
+                <hr>
+                <span class="label">Alias</span>
+                <span class="content">ALIAS.DENISE.GABRIEL</span>
+                <hr>
+                <span class="label">CBU</span>
+                <span class="content">1234567890123456789012</span>
+            </div>
+        </div>
+    </div>
     <section id="presentacion" class="s-presentacion">
         <img  src="src/imgs/portada.jpg" alt="Foto Denise y Gabriel abrazados">
         <div class="backgroundTexto">
@@ -22,6 +38,7 @@
               <h2>¡ NOS CASAMOS !</h2>
           </div>
            <div id="fecha" class="s-fecha">
+            <div>
               <h2>12 noviembre, 2023</h2>
               <div class="cuenta-regresiva">
                  <div class="cont-cuenta">
@@ -42,10 +59,14 @@
                  </div>
       
               </div>
+            </div>
+              
            </div>
         </div>
     </section>
     <section id="location" class="section s-location">
+      <img class="hojas-deco-invertidas" src="src/imgs/hojitas para tarjeta.png" alt="">
+      <img class="hojas-deco" src="src/imgs/hojitas para tarjeta.png" alt="">
       <img src="src/imgs/foro lorenza.jpeg" alt="" class="img-location">
       <div class="location-info">
         <h1>Ceremonia y Fiesta</h1>
@@ -61,17 +82,16 @@
 
 
 
-    <section id="book" class="section s-book"> 
+    <section id="book" class="section s-book sectionPadding"> 
         <h2>Nosotros...</h2>
         
             <div id="carouselExampleAutoplaying" class="carousel slide d-block carousel-style" data-bs-ride="carousel" >
                 <div class="carousel-inner">
                   <div class="carousel-item active"><img id="img1" class="d-block w-100"src="src\imgs\galeria\img1.JPG" alt=""></div>
-                  <div class="carousel-item active"><img id="img2" class="d-block w-100"src="src\imgs\galeria\img2.JPG" alt=""></div>
-                  <div class="carousel-item active"><img id="img3" class="d-block w-100"src="src\imgs\galeria\img3.JPG" alt=""></div>
-                  <div class="carousel-item active"><img id="img4" class="d-block w-100"src="src\imgs\galeria\img4.JPG" alt=""></div>
-                  <div class="carousel-item active"><img id="img5" class="d-block w-100"src="src\imgs\galeria\img5.JPG" alt=""></div>
-                  <div class="carousel-item active"><img id="img6" class="d-block w-100"src="src\imgs\galeria\img6.JPG" alt=""></div>
+                  <div class="carousel-item"><img id="img2" class="d-block w-100"src="src\imgs\galeria\img2.JPG" alt=""></div>
+                  <div class="carousel-item"><img id="img3" class="d-block w-100"src="src\imgs\galeria\img3.JPG" alt=""></div>
+                  <div class="carousel-item"><img id="img4" class="d-block w-100"src="src\imgs\galeria\img4.JPG" alt=""></div>
+                  <div class="carousel-item"><img id="img5" class="d-block w-100"src="src\imgs\galeria\img5.JPG" alt=""></div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -83,14 +103,16 @@
                 </button>
               </div>
     </section>
-    <section id="book" class="section s-gift"> 
+    <section  class="section s-gift sectionPadding"> 
       <img src="src/imgs/gift.svg" alt="">
       <div class="gift-info">
         <p>Si deseas realizarnos un regalo podes colaborar con nuestra luna de miel...</p>
-        <button class="buttom-modal ">Ver datos Bancarios</button>
+        <button class="buttom-modal " onclick="openModal()">Ver datos Bancarios</button>
       </div>
     </section>
-    <section id="book" class="section s-asistencia"> 
+    <section  class="section s-asistencia sectionPadding"> 
+      <img class="hojas-deco-invertidas izquierda" src="src/imgs/hojitas para tarjeta-invertida.png" alt="">
+      <img class="hojas-deco izquierda derecha" src="src/imgs/hojitas para tarjeta-invertida.png" alt="">
       <h2>Confirmacion de Asistencia</h2>
       <div class="asistencia-info">
         <p>Esperamos que seas Parte de esta gran celebracion</p>
@@ -100,7 +122,7 @@
       </div>
     </section>
 
-    <section id="book" class="section s-cancion"> 
+    <section  class="section s-cancion sectionPadding"> 
       <img src="src/imgs/nota-musical.svg" alt="">
       <h2>Musica que no puede faltar...</h2>
       <div class="gift-info">
@@ -109,16 +131,16 @@
       </div>
     </section>
 
-    <section id="book" class="section s-dressCode"> 
+    <section  class="section s-dressCode "> 
       <h2>Dress Code</h2>
       <div class="gift-info">
         <p>Vestimenta Formal, Elecante</p>
       </div>
     </section>
   
-    <section id="book" class="section s-despedida"> 
+    <section  class="section s-despedida"> 
       <img class="foto-despedida" src="src/imgs/foto despedida.png" alt="">
-      <img class="imgLogoDespedida" src="src/imgs/LogoD-G.png" alt="">
+      <img class="imgLogoDespedida" src="src/imgs/LogoD-Gris.png" alt="">
       <div class="textoImgPresentacion despedidaText">
         <h1>Denise y Gabriel</h1>
         <h2>¡ TE ESPERAMOS !</h2>
