@@ -295,11 +295,16 @@ html{
 .location-info .infoExtra{
     margin: .5rem;
     padding:.5rem;
-    line-height: 0.2rem;
+    line-height: 1rem;
+    
+}
+.infoExtra p{
+    margin-bottom: 0rem;
 }
 .mapa{
     width:62%;
     height: 15rem;
+    margin-bottom: 1rem;
 }
 
 .carousel-style{
@@ -456,8 +461,14 @@ html{
 /* For screens smaller than 768px */
 @media screen and (max-width: 467px) {
    html{
-    font-size:20px;
+    font-size:18px;
    }
+   .s-asistencia h2 , .s-cancion h2{
+    font-size: 2rem;
+    font-family: 'Great Vibes', cursive;
+    color: var(--secondary3-color-text);
+
+}
   }
   
   /* For screens between 768px and 1023px */
