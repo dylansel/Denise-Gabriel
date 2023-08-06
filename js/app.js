@@ -94,3 +94,38 @@ function outsideClick(event) {
         closeModal();
     }
 }
+
+
+const musicPlayer = document.getElementById('background-music');
+const playPauseBtn = document.getElementById('play-pause-btn');
+musicPlayer.volume = 0.5;
+
+playPauseBtn.addEventListener('click', () => {
+  if (musicPlayer.paused) {
+    musicPlayer.play();
+    playPauseBtn.innerHTML = '<i class="fas fa-pause"></i>';
+    console.log("play")
+  } else {
+    musicPlayer.pause();
+    playPauseBtn.innerHTML = '<i class="fas fa-play"></i>';
+    console.log("pausado")
+  }
+});
+
+
+document.addEventListener('click', () => {
+    if (musicPlayer.muted) {
+      musicPlayer.muted = false;
+      console.log("DESMUTEADO")
+      musicPlayer.play();
+    }
+  });
+  
+document.addEventListener('scroll', () => {
+if (musicPlayer.muted) {
+    musicPlayer.muted = false;
+    console.log("DESMUTEADO")
+    musicPlayer.play();
+}
+});
+  
