@@ -115,17 +115,11 @@ playPauseBtn.addEventListener('click', () => {
 
 document.addEventListener('click', () => {
     if (musicPlayer.muted) {
+        musicPlayer.play();
       musicPlayer.muted = false;
       console.log("DESMUTEADO")
-      musicPlayer.play();
     }
   });
   
-document.addEventListener('scroll', () => {
-if (musicPlayer.muted) {
-    musicPlayer.muted = false;
-    console.log("DESMUTEADO")
-    musicPlayer.play();
-}
-});
+
   
