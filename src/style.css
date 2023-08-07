@@ -124,6 +124,16 @@ html{
     margin: 0.5rem;
     color: #fff;
 }
+.cancion-info{
+    width: 80%;
+    text-align: center;
+    margin: 0.5rem;
+    color: var(--secondary3-color-text);
+}
+.cancion-info a{
+   
+    color: #fff;
+}
 .s-dressCode{
     width:100%;
     margin: auto;
