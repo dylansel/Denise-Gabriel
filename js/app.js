@@ -113,13 +113,25 @@ playPauseBtn.addEventListener('click', () => {
 });
 
 
-document.addEventListener('click', () => {
-    if (musicPlayer.muted) {
-        musicPlayer.play();
-      musicPlayer.muted = false;
-      console.log("DESMUTEADO")
-    }
-  });
-  
+
+
+function closeModal() {
+  const modalContainer = document.getElementById('modalBienvenidaContainer');
+  modalContainer.classList.remove('show');
+  document.body.style.overflow = 'auto';
+  document.body.style.position = 'static';
+  setTimeout(()=>{modalContainer.style.display = 'none';},1000)
+  musicPlayer.muted = false;
+  musicPlayer.play();
+}
+
+window.onload = function() {
+  const modalContainer = document.getElementById('modalBienvenidaContainer');
+  modalContainer.classList.add('show');
+  document.body.style.overflow = 'hidden';
+  document.body.style.position = 'fixed';
+  document.body.style.top = `0px`;
+  document.body.style.left = `0px`;
+};
 
   
