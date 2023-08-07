@@ -115,7 +115,7 @@ playPauseBtn.addEventListener('click', () => {
 
 
 
-function closeModal() {
+function closeModalBienvenida() {
   const modalContainer = document.getElementById('modalBienvenidaContainer');
   modalContainer.classList.remove('show');
   document.body.style.overflow = 'auto';

@@ -399,18 +399,19 @@ html{
 
 .modal-content {
     text-align: center;
-    padding: 1.875rem; /* 30px */
+    padding: 1rem; /* 30px */
     border-radius: 0.3125rem; /* 5px */
     max-width: 22rem; /* 400px */
     box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
     background-color: var(--secondary-color);
     position: relative;
+    margin: 1rem;
 }
 
 .modal-close {
     position: absolute;
-    top: 0.625rem; /* 10px */
-    right: 0.625rem; /* 10px */
+    top: 0rem; /* 10px */
+    right: 0.5rem; /* 10px */
     font-size: 1.5rem; /* 24px */
     cursor: pointer;
     color: var(--secondary3-color-text);
@@ -422,7 +423,7 @@ html{
 
 .modal-content h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem; /* 24px */
+    font-size: 1.4rem; /* 24px */
     color: var(--primary-color-text);
     margin-bottom: 1.25rem; /* 20px */
 }
@@ -437,12 +438,12 @@ html{
 .modal-content .label {
     color: var(--primary-color);
     display: block;
-    font-size: 0.875rem; /* 14px */
+    font-size: 0.8rem; /* 14px */
      
 }
 
 .modal-content .content {
-    font-size: 1.125rem; /* 18px */
+    font-size: 0.9rem; /* 18px */
     font-weight: bold;
 }
 
