@@ -409,7 +409,7 @@ html{
 
 .modal-content {
     text-align: center;
-    padding: 1rem; /* 30px */
+    padding: .6rem; /* 30px */
     border-radius: 0.3125rem; /* 5px */
     max-width: 22rem; /* 400px */
     box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
@@ -433,16 +433,17 @@ html{
 
 .modal-content h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.4rem; /* 24px */
+    font-size: 1.2rem; /* 24px */
     color: var(--primary-color-text);
-    margin-bottom: 1.25rem; /* 20px */
+    margin-bottom: 1rem; /* 20px */
 }
 
 .modal-content .datos-bancarios {
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem; /* 16px */
+    font-size: .5rem; /* 16px */
+    display: block;
     color: var(--primary-color-text);
-    margin-bottom: 1rem; /* 16px */
+    margin-bottom: 0.5rem; /* 16px */
 }
 
 .modal-content .label {
@@ -453,7 +454,7 @@ html{
 }
 
 .modal-content .content {
-    font-size: 0.9rem; /* 18px */
+    font-size: 0.7rem; /* 18px */
     font-weight: bold;
 }
 
