@@ -125,13 +125,4 @@ function closeModalBienvenida() {
   musicPlayer.play();
 }
 
-window.onload = function() {
-  const modalContainer = document.getElementById('modalBienvenidaContainer');
-  modalContainer.classList.add('show');
-  document.body.style.overflow = 'hidden';
-  document.body.style.position = 'fixed';
-  document.body.style.top = `0px`;
-  document.body.style.left = `0px`;
-};
-
   
