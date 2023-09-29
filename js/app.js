@@ -125,5 +125,4 @@ function closeModalBienvenida() {
   musicPlayer.play();
 }
 
-
   
